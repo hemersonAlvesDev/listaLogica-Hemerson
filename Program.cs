@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-//Variáveis e Operações Básicas
+Variáveis e Operações Básicas
 #region 1. Calculadora de Média
 
 Console.Write("Digite sua primeira nota com 2 casas decimais: ");
@@ -30,3 +30,19 @@ Console.WriteLine(dias);
 
 #endregion
 
+#region 3. Troca de Valores
+
+int A = 5;
+int B = 8;
+Console.WriteLine(A);
+Console.WriteLine(B);
+
+int temporario = A;
+
+A = B;
+B = temporario;
+
+Console.WriteLine(A);
+Console.WriteLine(B);
+
+#endregion
