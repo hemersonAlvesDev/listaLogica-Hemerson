@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+
 //Variáveis e Operações Básicas
 #region 1. Calculadora de Média
 
@@ -16,3 +17,16 @@ decimal media = (nota01 + nota02 + nota03) / 3;
 Console.WriteLine(media);
 
 #endregion
+
+
+#region 2. Conversor de idade
+
+Console.Write("Digite sua Idade em Anos: ");
+int anoCliente = Convert.ToInt16(Console.ReadLine());
+
+int dias = anoCliente * 365;
+
+Console.WriteLine(dias);
+
+#endregion
+
