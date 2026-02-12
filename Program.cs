@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-Variáveis e Operações Básicas
+//Variáveis e Operações Básicas
+
 #region 1. Calculadora de Média
 
 Console.Write("Digite sua primeira nota com 2 casas decimais: ");
@@ -44,5 +45,22 @@ B = temporario;
 
 Console.WriteLine(A);
 Console.WriteLine(B);
+
+#endregion
+
+//Nivel 2 Estruturas Condicionais (if, else if, else)
+#region 1. verificador de maioridade
+
+Console.Write("Digite sua Idade: ");
+int idade = Convert.ToInt16(Console.ReadLine());
+
+    if (idade >= 18)
+{
+    Console.WriteLine("Entrada Autorizada");
+} else
+{
+    Console.WriteLine("Entrada Não Autorizada, Menor de Idade");
+}
+
 
 #endregion
