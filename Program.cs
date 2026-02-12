@@ -46,6 +46,7 @@ B = temporario;
 Console.WriteLine(A);
 Console.WriteLine(B);
 
+
 #endregion
 
 //Nivel 2 Estruturas Condicionais (if, else if, else)
@@ -54,13 +55,35 @@ Console.WriteLine(B);
 Console.Write("Digite sua Idade: ");
 int idade = Convert.ToInt16(Console.ReadLine());
 
-    if (idade >= 18)
+if (idade >= 18)
 {
     Console.WriteLine("Entrada Autorizada");
-} else
+}
+else
 {
     Console.WriteLine("Entrada Não Autorizada, Menor de Idade");
 }
 
+#endregion
+
+
+#region Classificador de Numero
+
+Console.Write("Digite um Numero: ");
+int num1 = Convert.ToInt16(Console.ReadLine());
+
+    if (num1 % 2 == 0 && num1 > 0 )
+{
+    Console.WriteLine("o Seu numero é Par e Positivo");
+} else if (num1 % 2 == 1 && num1 > 0)
+{
+    Console.WriteLine("O seu numero é Ímpar e Positivo");
+} else if (num1 < 0)
+{
+    Console.WriteLine("O seu numero é Negativo");
+} else
+{
+    Console.WriteLine("O Seu numero é Zero");
+}
 
 #endregion
