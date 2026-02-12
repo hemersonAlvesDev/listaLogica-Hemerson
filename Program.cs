@@ -50,6 +50,7 @@ Console.WriteLine(B);
 #endregion
 
 //Nivel 2 Estruturas Condicionais (if, else if, else)
+
 #region 1. verificador de maioridade
 
 Console.Write("Digite sua Idade: ");
@@ -67,23 +68,48 @@ else
 #endregion
 
 
-#region Classificador de Numero
+#region 2. Classificador de Numero
 
 Console.Write("Digite um Numero: ");
 int num1 = Convert.ToInt16(Console.ReadLine());
 
-    if (num1 % 2 == 0 && num1 > 0 )
+if (num1 % 2 == 0 && num1 > 0)
 {
     Console.WriteLine("o Seu numero é Par e Positivo");
-} else if (num1 % 2 == 1 && num1 > 0)
+}
+else if (num1 % 2 == 1 && num1 > 0)
 {
     Console.WriteLine("O seu numero é Ímpar e Positivo");
-} else if (num1 < 0)
+}
+else if (num1 < 0)
 {
     Console.WriteLine("O seu numero é Negativo");
-} else
+}
+else
 {
     Console.WriteLine("O Seu numero é Zero");
+}
+
+#endregion
+
+
+#region 3. Validação login Simples
+
+string usuarioCorreto = "Admin";
+string senhaCorreta = "12345";
+
+Console.Write("Insíra o Usuário: ");
+string userRepost = Console.ReadLine();
+
+Console.Write("Insíra a senha: ");
+string senhaRepost = Console.ReadLine();
+
+if (usuarioCorreto == userRepost && senhaCorreta == senhaRepost)
+{
+    Console.WriteLine("Login efetuado com sucesso!!! ");
+} else
+{
+    Console.WriteLine("Usuário ou Senha está errado ");
 }
 
 #endregion
