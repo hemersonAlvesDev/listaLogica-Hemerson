@@ -113,3 +113,22 @@ if (usuarioCorreto == userRepost && senhaCorreta == senhaRepost)
 }
 
 #endregion
+
+
+//nível 3, Estrutura de repetição (loops)
+#region 1. Contagem regressiva
+
+for (int i = 10; i >= 0; i--)
+{
+    if(i > 0)
+    {
+        Console.WriteLine(i);
+    } else
+    {
+        Console.WriteLine("lançar...");
+    }
+    
+}
+
+#endregion
+
